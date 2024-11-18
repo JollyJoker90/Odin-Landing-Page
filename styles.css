@@ -1,4 +1,46 @@
+* {
+    /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
+    font-family: "Roboto";
+
+}
+
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
+}
+
+.header,
+.information,
+.quote,
+.signup,
+.footer {
+    padding: 0 15%;
+}
+
+.header,
+.footer {
+    background-color: #1F2937;
+}
+
+.header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 48px;
+}
+
+.header-nav {
+    margin: 16px 0;
+}
+
+.header-content h1 {
+    font-weight: 900;
+    font-size: 48px;
+    color: #F9FAF8
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
