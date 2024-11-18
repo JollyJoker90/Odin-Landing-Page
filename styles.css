@@ -1,13 +1,16 @@
 * {
-    /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
     font-family: "Roboto";
-
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    height: 100vh;
+}
+
+p {
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
 
 .header,
@@ -15,7 +18,7 @@ body {
 .quote,
 .signup,
 .footer {
-    padding: 0 15%;
+    padding: 0 20%;
 }
 
 .header,
@@ -27,20 +30,137 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    padding-bottom: 48px;
+    padding-bottom: 96px;
+}
+
+#logo {
+    margin-right: auto;
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
 }
 
 .header-nav {
     margin: 16px 0;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.header-container {
+    display: flex;
+    gap: 16px;
 }
 
 .header-content h1 {
     font-weight: 900;
     font-size: 48px;
-    color: #F9FAF8
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.header-content, .header-container img {
+    flex: 1;
+}
+
+.header-container img {
+    background-color: darkgray;
+    flex: 1;
+}
+
+.header-link,
+.header-content p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header-content p {
+    margin-bottom: 16px;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.btn {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+}
+
+.information {
+    padding-top: 48px;
+    padding-bottom: 96px;
+}
+
+.information h1 {
+    text-align: center;
+    color: #1F2937;
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 48px;
+}
+
+.info-container {
+    display: flex;
+    gap: 24px;
+}
+
+.item-image {
+    border: 2px solid #3882F6;
+    border-radius: 16px;
+    height: 100px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding-top: 96px;
+    padding-bottom: 48px;
+    color: #1F2937;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+}
+
+.signup {
+    background-color: #3882F6;
+    color: white;
+    margin: 64px 20%;
+    padding: 24px 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.signup-text h1 {
+    font-size: 24px;
+}
+.signup-text p {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.btn-signup {
+    border: 2px solid white;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 24px;
 }
